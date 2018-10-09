@@ -1,0 +1,186 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rontikeky.beraspakone.Fragment.fragment_option_menu">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+            android:id="@+id/cardMenuOption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rgRiwayatPembelian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ico"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/ic_shopping_cart_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/tvRiwayatPembelian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/ico"
+                            android:textSize="17dp"
+                            android:text="Riwayat Pemesanan"
+                            android:layout_toRightOf="@+id/ico" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/ico"
+                            android:background="#c1c1c1"/>
+                    </RelativeLayout>
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rgPengaturanAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rgRiwayatPembelian">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/icoAlamat"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/ic_home_24dp" />
+
+                        <TextView
+                            android:id="@+id/tvPengaturanAlamat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icoAlamat"
+                            android:layout_toRightOf="@+id/icoAlamat"
+                            android:text="Pengaturan Alamat"
+                            android:textSize="17dp"
+                            tools:ignore="RtlCompat" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/icoAlamat"
+                            android:background="#c1c1c1" />
+                    </RelativeLayout>
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rgPengaturanProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rgPengaturanAlamat">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/icoProfile"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/ic_person_24dp" />
+
+                        <TextView
+                            android:id="@+id/tvPengaturanProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icoProfile"
+                            android:text="Pengaturan Profile"
+                            android:textSize="17dp"
+                            android:layout_toRightOf="@+id/icoProfile" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/icoProfile"
+                            android:background="#c1c1c1" />
+                    </RelativeLayout>
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rgUbahPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rgPengaturanProfile">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/icoPassword"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/ic_https_white_24dp" />
+
+                        <TextView
+                            android:id="@+id/tvUbahPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icoPassword"
+                            android:text="Ubah Password"
+                            android:textSize="17dp"
+                            android:layout_toRightOf="@+id/icoPassword" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/icoPassword"
+                            android:background="#c1c1c1" />
+                    </RelativeLayout>
+                </RadioGroup>
+
+
+        </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_btn_logout"
+                android:layout_margin="10dp"
+                android:text="Logout"
+                android:textColor="#fff"
+                android:layout_below="@+id/cardMenuOption"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>
+

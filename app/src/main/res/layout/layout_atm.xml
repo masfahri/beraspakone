@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardKurir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_margin="5dp"
+        card_view:cardElevation="3dp">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/namaAtm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="BNI"
+                android:gravity="center"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/llDetailAtm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/namaAtm">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namaAtm"
+                android:layout_toLeftOf="@+id/noRekening"
+                android:layout_gravity="center"
+                android:textSize="10dp"
+                android:text="Nomor Rekening : "
+                android:gravity="center"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/noRekening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namaAtm"
+                android:layout_gravity="bottom"
+                android:textSize="10dp"
+                android:text="123456789"
+                android:gravity="center"
+                android:layout_centerHorizontal="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgAtm"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/llDetailAtm"
+                android:src="@drawable/vacum"
+                android:scaleType="fitXY"  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/imgAtm"
+                android:layout_centerHorizontal="true"
+                android:text="Menerima transfer antar Bank, akan dikenakan biaya jika dari bank lain"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

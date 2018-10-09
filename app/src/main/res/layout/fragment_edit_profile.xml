@@ -1,0 +1,194 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rontikeky.beraspakone.Fragment.fragment_edit_profile">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvUbahProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="UBAH BIODATA"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/tvUbahProfile"
+                    android:background="#c1c1c1"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlNamaDepan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="Nama Depan"
+                    android:textColorHint="@color/bluePrimary"
+                    android:layout_below="@+id/view1"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tvNamaDepan"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Depan"
+                        android:textColorHint="@null"
+                        android:inputType="textPersonName"
+                        android:textSize="13dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlNamaBelakang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/view1"
+                    android:layout_toRightOf="@+id/tlNamaDepan"
+                    android:hint="Nama Belakang"
+                    android:textColorHint="@color/bluePrimary"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tvNamaBelakang"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Nama Belakang"
+                        android:textColorHint="@null"
+                        android:textSize="13dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tlNamaDepan"
+                    android:hint="Nomor Telepon"
+                    android:textColorHint="@color/bluePrimary"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tvPhone"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:hint="Nomor Telepon"
+                        android:textColorHint="@null"
+                        android:inputType="phone"
+                        android:maxLength="12"
+                        android:textSize="13dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toRightOf="@+id/tlPhone"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@+id/tlNamaBelakang"
+                    tools:ignore="NotSibling">
+
+                    <RadioButton
+                        android:id="@+id/rbPria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:buttonTint="@color/bluePrimary"
+                        android:textColorHint="@color/bluePrimary"
+                        android:textColorLink="@color/bluePrimary"
+                        android:text="Pria" />
+
+                    <RadioButton
+                        android:id="@+id/rbWanita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/rbPria"
+                        android:buttonTint="@color/bluePrimary"
+                        android:textColorHint="@color/bluePrimary"
+                        android:textColorLink="@color/bluePrimary"
+                        android:text="Wanita" />
+
+                </RadioGroup>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlTanggalLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rgGender"
+                    android:hint="Tanggal Lahir"
+                    android:textColorHint="@color/bluePrimary"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tvTanggalLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Nomor Telepon"
+                        android:textColorHint="@null"
+                        android:inputType="date"
+                        android:maxLength="12"
+                        android:textSize="13dp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSimpanProfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardEditProfile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/bluePrimary"
+            android:text="Simpan"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

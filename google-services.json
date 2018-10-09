@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "124664230669",
+    "firebase_url": "https://beras-pak-one.firebaseio.com",
+    "project_id": "beras-pak-one",
+    "storage_bucket": "beras-pak-one.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124664230669:android:923db670857e9ca1",
+        "android_client_info": {
+          "package_name": "rontikeky.beraspakone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124664230669-i4fo80po7ltrrfjmm6t65rqkkluihds2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkii1xfk62lhxpkEVFzcmC7bQdqV6jf_c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

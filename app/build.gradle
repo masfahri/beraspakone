@@ -1,0 +1,101 @@
+//noinspection GradleCompatible
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "rontikeky.beraspakone"
+        minSdkVersion 16
+        targetSdkVersion 25
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        dataBinding {
+            enabled = true
+        }
+
+
+    }
+    buildTypes {
+        debug {
+            manifestPlaceholders = [mapApiKeyValue: "AIzaSyBkii1xfk62lhxpkEVFzcmC7bQdqV6jf_c"]
+        }
+        release
+                {
+                    manifestPlaceholders = [mapApiKeyValue: "AIzaSyAn0KsyY6TBng9cznQ6A4qQoB8KzHE-Vfg"]
+                    minifyEnabled false
+                    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://maven.google.com' }
+        mavenCentral()
+    }
+}
+
+ext.androidtoolsversions = '27.0.2'
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+//    implementation 'com.android.support:support-v4:26.1.0'
+    implementation "com.android.support:support-v4:$androidtoolsversions"
+    implementation 'com.android.support:support-v4:27.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    //    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation "com.android.support:recyclerview-v7:$androidtoolsversions"
+    implementation "com.bignerdranch.android:expandablerecyclerview:1.0.3"
+    implementation "com.android.support:cardview-v7:$androidtoolsversions"
+    implementation "com.android.support:design:$androidtoolsversions"
+    implementation "com.android.support:appcompat-v7:$androidtoolsversions"
+    implementation 'com.google.android.gms:play-services-places:11.8.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.android.volley:volley:1.0.0'
+//    implementation 'com.google.firebase:firebase-auth:9.0.2'
+    implementation 'com.squareup.picasso:picasso:2.4.0'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.andkulikov:transitionseverywhere:1.7.9'
+    implementation "com.android.support:transition:$androidtoolsversions"
+    implementation 'com.michaelmuenzer.android:ScrollableNumberPicker:0.2.2'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.0.0-RC1'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.synnapps:carouselview:0.1.4'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+}
+
+/*
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.0'
+            }
+        }
+    }
+}*/

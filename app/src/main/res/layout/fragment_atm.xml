@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_step_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rontikeky.beraspakone.konfirmasi.stepOne">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+            android:id="@+id/lblKonfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Petunjuk Transfer ATM" />
+
+        <TextView
+            android:id="@+id/langkah"
+            style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer_atm" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

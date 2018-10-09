@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Beras Pak One</string>
+    <string name="title_product">Beras Vakuum</string>
+    <string name="desc_product">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit sem at pulvinar convallis. Donec eu ipsum vel est imperdiet interdum in sit amet orci. Fusce nulla leo, lobortis at libero vitae, commodo viverra velit. Proin et aliquet ex. Nullam interdum aliquam dapibus.</string>
+    <string name="gmaps_key">AIzaSyDJ8Bj2h39nBL2DHB6uVAV0uzzQOpwiiPc</string>
+    <string name="bulan_prompt">Pilih Bulan</string>
+    <string name="tahun_prompt">Pilih Tahun</string>
+    <string name="provinsi_prompt">Pilih Provinsi</string>
+    <string name="string_click_to_load">Click on FloatingActionButton to Load JSON</string>
+    <string name="string_getting_json_title">please wait ...</string>
+    <string name="string_getting_json_message">Get ur JSON</string>
+    <string name="string_some_thing_wrong">something error</string>
+    <string name="string_internet_connection_not_available">No Internet</string>
+    <string-array name="shipping_arrays">
+        <item>Gojek</item>
+        <item>Kiosk Delivery</item>
+    </string-array>
+    <string name="transfer_atm">
+        <ol>\n\n 1. Pilih Menu Lain -> Transfer</ol>
+        <ol>\n\n 2. Pilih Rekening asal dan Pilih Rekening Tujuan ke Rekening BNI</ol>
+        <ol>\n\n 3. Masukan Nomor Rekening 1234567890 dan Pilih benar</ol>
+        <ol>\n\n 4. Masukan jumlah Pembayaran dan Pilih Benar</ol>
+        <ol>\n\n 5. Periksa data di Layar. Pastikan nama penerima</ol>
+    </string>
+
+    <string-array name="bulan_arrays">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+    <string-array name="tanggal_arrays">
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+    <string-array name="provinsi_arrays">
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Surabaya</item>
+        <item>Yogyakarta</item>
+        <item>Solo</item>
+    </string-array>
+
+    <string-array name="pilih_kurir">
+        <item>Pilih Kurir</item>
+        <item>Gojek</item>
+        <item>JNE</item>
+    </string-array>
+
+    <string-array name="item_gojek">
+        <item>Pilih Paket Pengiriman</item>
+        <item>Same Day</item>
+        <item>Instant Courier</item>
+    </string-array>
+
+    <string-array name="item_jne">
+        <item>Pilih Paket Pengiriman</item>
+        <item>Reguler</item>
+        <item>Yes</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_web_view">webView</string>
+
+</resources>

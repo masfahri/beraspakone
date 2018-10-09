@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cartListProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/cartImageView"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/txtCartProduct_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/cartImageView"
+                android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtCartProduct_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCartProduct_Name"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/cartImageView"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/rp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtCartProduct_price"
+                android:layout_alignBottom="@+id/txtCartProduct_price"
+                android:layout_alignStart="@+id/txtCartProduct_Name"
+                android:text="Rp."
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtProduct_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCartProduct_price"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/cartImageView"
+                android:text="13.3 Inch, 256 GB"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <Button
+                android:id="@+id/btnRead"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_alignStart="@+id/txtProduct_description"
+                android:layout_below="@+id/txtProduct_description"
+                android:layout_gravity="center"
+                android:layout_marginStart="22dp"
+                android:background="@null"
+                android:text="Read More"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="#000"
+                android:textIsSelectable="false"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtjumlah"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/btnRead"
+                android:layout_marginTop="13dp"
+                android:padding="4dp"
+                android:text="Jumlah Pesan" />
+
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/txtjumlah"
+                android:layout_toEndOf="@+id/txtjumlah"
+                android:gravity="center"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="8sp"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/rpj"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/jumlah"
+                android:layout_alignBottom="@+id/jumlah"
+                android:layout_toEndOf="@+id/jumlah"
+                android:padding="4dp"
+                android:text="Rp."
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/rpj"
+                android:layout_alignBottom="@+id/rpj"
+                android:layout_toEndOf="@+id/rpj"
+                android:padding="4dp"
+                android:text="0"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

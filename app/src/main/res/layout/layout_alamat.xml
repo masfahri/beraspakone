@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <ImageButton
+        android:id="@+id/imageDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="7dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_close_black_24dp"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_alignParentRight="true" />
+
+        <RadioGroup
+            android:id="@+id/rgAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbAlamatTujuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bapak Paijo"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rbAlamatTujuan"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:text="Rumah Sendiri" />
+
+                <TextView
+                    android:id="@+id/txtALamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtAddress"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:text="Jl. Kebayoran Lama No 13 RT 010/07 Cipulir Jakarta Selatan No 12 12230" />
+
+                <TextView
+                    android:id="@+id/idAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPhone"
+                    android:visibility="gone"/>
+
+
+
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtALamat"
+                    android:text="0987654321"
+                    android:layout_marginLeft="30dp" />
+            </RelativeLayout>
+
+        </RadioGroup>
+
+</RelativeLayout>

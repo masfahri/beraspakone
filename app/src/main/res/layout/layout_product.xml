@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tvTransition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Transition Everywhere"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/listProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txtProduct_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textSize="10dp"
+                android:text="50000"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txtProduct_price"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/vacum" />
+
+            <TextView
+                android:id="@+id/txtProduct_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:text="Product Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtProduct_Name"
+                android:layout_centerHorizontal="true"
+                android:text="Per 5 Kg"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+            <TextView
+                android:id="@+id/txtProduct_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtProduct_Name"
+                android:layout_margin="5dp"
+                android:text="Product Description Product Description Product Description Product Description Product Description Product Description Product Description Product Description Product Description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:visibility="invisible"/>
+
+            <View
+                android:id="@+id/hr"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"
+                android:layout_below="@id/txtProduct_description"
+                android:background="@color/bluePrimary"/>
+
+            <Button
+                android:id="@+id/btnOrder"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/hr"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_btn_login"
+                android:textColor="@color/colorPrimary"
+                android:onClick="Order"
+                android:text="Beli Produk"
+                android:textSize="7dp" />
+
+            <ImageButton
+                android:id="@+id/imageDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_delete_black_24dp"
+                tools:ignore="VectorDrawableCompat"
+                android:visibility="gone"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:id="@+id/imageAnimate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/animated_checked"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

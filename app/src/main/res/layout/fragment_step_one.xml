@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main_container_pembayaran"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/pCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="103dp"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlTotal"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_kosong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cart Kosong"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"/>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rlTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblTobar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Bayar: " />
+
+            <TextView
+                android:id="@+id/tvHargaTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="Rp.0" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativeLayout">
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_btn_next"
+            android:text="Langkah Selanjutnya"
+            android:textColor="#FFFFFF"
+             />
+    </RelativeLayout>
+
+
+</RelativeLayout>
